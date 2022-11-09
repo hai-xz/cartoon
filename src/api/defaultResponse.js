@@ -24,14 +24,6 @@ const setStateRequest=(url,setState)=>{
 
 export {useStateRequest,setStateRequest}
 
-// function isFirst(data){
-//   for(let val of defauleData.values()){
-//     if(val===data){
-//       return true
-//     }
-//   }
-//   return false
-// }
 
 defauleData.set('/data/carlist',{list:[defimg],quantity:1})
 

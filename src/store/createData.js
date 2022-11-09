@@ -1,10 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
+import defimg from '../assets/defimg2.jpg'
 
 const userState = {
   isSignin:false,
   id:null,
   name:'-1',
   createTime:0,
+  headSrc:defimg,
   favoriteList:[]
 }
 
@@ -22,6 +24,7 @@ export const userDataSlice = createSlice({
       state.id=action.payload.id
       state.name=action.payload.name
       state.createTime=action.payload.createTime
+      state.headSrc=action.payload.headSrc
     }
   },
 })

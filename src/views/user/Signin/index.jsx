@@ -1,7 +1,7 @@
-import React,{useRef,useState} from 'react'
+import React,{useRef,useState,useEffect} from 'react'
 import './i.css'
 import request from '../../../api/request'
-import { useDispatch } from 'react-redux'
+import { useDispatch,useSelector } from 'react-redux'
 import { setSignin,setUserInfo,setFavoriteList } from '../../../store/createData'
 import { useNavigate } from 'react-router-dom'
 
@@ -13,12 +13,14 @@ export default function Signin() {
   const name=useRef()
   const navigate=useNavigate()
   const dispath=useDispatch()
+  const storeIsSignin=useSelector(state=>state.userData.isSignin)
 
   const setUserData=data=>{
     let info={
       id:data.data[0].id,
       name:data.data[0].name,
-      createTime:data.data[0].zuceshijian
+      createTime:data.data[0].zuceshijian,
+      headSrc:data.data[0].headSrc
     }
     let set=new Set()
     let coll=JSON.parse(data.data[0].soucan)
@@ -45,6 +47,11 @@ export default function Signin() {
     }
   }
 
+  useEffect(()=>{
+    if(storeIsSignin){
+      navigate('/user')
+    }
+  },[storeIsSignin,navigate])
 
   return (
     <div>

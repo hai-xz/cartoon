@@ -33,7 +33,7 @@ export default function ControlBar(props) {
   }
 
   const nextChapter = i => {
-    if (cartoonData[0].chapter - 1 > i) {
+    if (cartoonData[0].chapter > i) {
       navigate(`/cartoon/${params.id}/${i}`)
     } else {
       alert('已经是最后一章节喽~')

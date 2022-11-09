@@ -21,7 +21,7 @@ export default function Chapter() {
   return (
     <div className='Chapter'>
       <div onClick={()=>setIsShow(!isShow)}>
-        {imgList.list.map(val=><img loading='lazy' src={val} key={val} alt='' />)}
+        {imgList.list.map(val=><img src={val} key={val} alt='' />)}
       </div>
       <ControlBar isShow={isShow} />
     </div>

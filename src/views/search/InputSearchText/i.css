@@ -7,7 +7,6 @@
   top: 0;
   left: 0;
   background-color: #ccc;
-  z-index: 2;
 }
 
 .InputSearchText>input{

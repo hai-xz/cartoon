@@ -18,8 +18,10 @@ export default function App() {
       let info={
         id:data.data[0].id,
         name:data.data[0].name,
-        createTime:data.data[0].zuceshijian
+        createTime:data.data[0].zuceshijian,
+        headSrc:data.data[0].headSrc
       }
+
       let set=new Set()
       let coll=JSON.parse(data.data[0].soucan)
       coll.forEach(val=>set.add(val.id))
