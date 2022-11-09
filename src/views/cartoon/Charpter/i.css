@@ -1,0 +1,21 @@
+.Chapter{
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.Chapter>div{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Chapter>div>img{
+  width: 100%;
+  height: auto;
+}

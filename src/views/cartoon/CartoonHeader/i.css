@@ -1,0 +1,35 @@
+.CartoonHeader{
+  width: 100%;
+  overflow: hidden;
+}
+
+.CartoonHeader>div:nth-child(1){
+  width: 100%;
+  height: 14rem;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position:relative;
+}
+
+.CartoonHeader>div>p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: rgb(255, 255, 255);
+  line-height: 2rem;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+
+.CartoonHeader>div:nth-child(2){
+  background-color: beige;
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+}

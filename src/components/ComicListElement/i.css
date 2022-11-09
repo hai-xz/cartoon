@@ -1,0 +1,38 @@
+.ComicListElement{
+  height: 11rem;
+  width: 6rem;
+  position: relative;
+}
+
+.ComicListElement>img{
+  width: 6rem;
+  height: 8rem;
+  border-radius: 0.4rem;
+}
+
+.ComicListElement>p{
+  font-size: 0.8rem;
+  color: black;
+  height: 1.5rem;
+  width: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ComicListElement>p:nth-child(3){
+  font-size: 0.65rem;
+  color:rgb(50, 50, 50)
+}
+
+.ComicListElement>span{
+  position: absolute;
+  display: block;
+  top: 0.4rem;
+  right: 0.4rem;
+  background-color: rgba(136, 236, 171, 0.7);
+  font-size: 0.65rem;
+  color:rgb(50, 50, 50);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.4rem;
+}

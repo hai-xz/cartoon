@@ -1,0 +1,29 @@
+.UserComic{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.UserComic>div{
+  background-color: rgb(199, 125, 34);
+  height: 2rem;
+  width: 100%;
+}
+
+.UserComic>div>button{
+  outline: none;
+  height: 2rem;
+  border: 0;
+  width: 6rem;
+  background-color: rgba(68, 245, 248, 0.589);
+  font-size: 1rem;
+}
+
+.UserComic>ul{
+  width: 100%;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+

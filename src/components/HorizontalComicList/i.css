@@ -1,0 +1,29 @@
+.HorizontalComicList{
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.HorizontalComicList::-webkit-scrollbar{
+  display: none;
+}
+
+.p{
+  height: 2rem;
+  width: 100%;
+  line-height: 2rem;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.HorizontalComicList>li{
+  margin: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.HorizontalComicListBox{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}

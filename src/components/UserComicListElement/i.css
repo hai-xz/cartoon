@@ -1,0 +1,30 @@
+.UserComicListElement{
+  width: 90%;
+  height: 7.2rem;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.7rem 0 0.7rem 0.8rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0.8rem auto;
+  border-radius: 1rem;
+}
+
+.UserComicListElement>img{
+  width: 4.5rem;
+  height: 100%;
+  border-radius: 0.3rem;
+}
+
+.UserComicListElement>div>p{
+  margin: 0.7rem 0 .5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.UserComicListElement>div>p:nth-child(2){
+  font-size: 0.8rem;
+}
+
+.UserComicListElement>div>p:nth-child(3){
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+}

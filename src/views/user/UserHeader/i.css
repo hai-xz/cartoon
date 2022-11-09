@@ -1,0 +1,14 @@
+.UserHeader{
+  width: 100%;
+  height: 15rem;
+  background-color: bisque;
+  text-align: center;
+  flex-shrink:0;
+}
+
+.UserHeader>img{
+  margin-top: 2rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}

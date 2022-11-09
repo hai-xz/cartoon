@@ -1,0 +1,28 @@
+.CartoonInfo{
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.CartoonInfo>ul{
+  width: 100%;
+}
+
+.CartoonInfo>ul>li{
+  display: flex;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+.CartoonInfo>ul>li>p:nth-child(1){
+  width: 5rem;
+  text-align: right;
+  padding-right: 1rem;
+  flex-shrink:0;
+}
+
+.CartoonInfo>ul>li>p:nth-child(2){
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding-right: 1rem;
+}
